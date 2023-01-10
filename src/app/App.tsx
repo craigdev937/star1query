@@ -1,15 +1,20 @@
 import React from "react";
 import "./App.css";
-import man from "@public/man.avif";
+import { QueryClient, 
+    QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { Main } from "../containers/Main";
+
+const QClient = new QueryClient();
 
 export const App = (): JSX.Element => {
     return (
-        <React.Fragment>
-            <img 
-                src={man} alt="Urban man" 
-                height="500px" width="auto"
-            />    
-        </React.Fragment>
+        <QueryClientProvider client={QClient}>
+            <React.Fragment>
+                <Main />
+                <ReactQueryDevtools initialIsOpen={false} />
+            </React.Fragment>
+        </QueryClientProvider>
     );
 };
 

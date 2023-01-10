@@ -20,6 +20,7 @@
   "homepage": "https://github.com/craigdev937/star1query#readme",
   "dependencies": {
     "@tanstack/react-query": "^4.22.0",
+    "@tanstack/react-query-devtools": "^4.22.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

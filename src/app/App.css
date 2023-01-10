@@ -1,5 +1,54 @@
-body {
-    background-color: steelblue;
+:root {
+    --light: #ddd;
+    --dark: #222;
+    --white: #fff;
+    --black: #1b1b1b;
+    --yellow: #ffff57;
+    --orange: #ff9c71;
+    --blue: #5bcefa;
+    --light-gray: #ddd;
+    --med-gray: #999;
 }
+
+body {
+    background-color: var(--dark);
+    font-family: sans-serif;
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--yellow);
+    font-size: 4em;
+    letter-spacing: 2px;
+}
+
+button {
+    margin: 0 10px;
+    background: transparent;
+    border: 4px solid var(--light-gray);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--light-gray);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--orange);
+    border-color: var(--blue);
+    transition: .75s ease-in-out;
+}
+
+.content {
+    text-align: left;
+}
+
+
 
 
