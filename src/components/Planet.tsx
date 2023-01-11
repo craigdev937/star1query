@@ -1,9 +1,13 @@
 import React from "react";
 
-export const Planets = (): JSX.Element => {
+type IPlanet = {
+    planet: any
+};
+
+export const Planet = ({planet}: IPlanet): JSX.Element => {
     return (
         <React.Fragment>
-            <h1>Planets</h1>
+
         </React.Fragment>
     );
 };
