@@ -13,10 +13,6 @@ export const Navbar = ({setPage}: NAV): JSX.Element => {
                     >Films
                 </button>
                 <button
-                    onClick={() => setPage("planets")}
-                    >Planets
-                </button>
-                <button
                     onClick={() => setPage("films")}
                     >People
                 </button>

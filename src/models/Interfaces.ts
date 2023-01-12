@@ -1,10 +1,25 @@
-export interface IPlanet {
+export interface ICharacter {
+    id: number,
     name: string,
-    population: string,
-    terrain: string,
-    url: string,
-    residents: string[],
-    films: string[]
+    height: number,
+    mass: number,
+    gender: string,
+    homeworld: string,
+    wiki: string,
+    image: string,
+    born: number,
+    bornLocation: string,
+    died: number,
+    diedLocation: string,
+    species: string,
+    hairColor: string,
+    eyeColor: string,
+    skinColor: string,
+    cybernetics: string,
+    affiliations: string[],
+    masters: string[],
+    apprentices: string[],
+    formerAffiliations: string[]
 };
 
 

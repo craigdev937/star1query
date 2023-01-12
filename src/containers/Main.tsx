@@ -1,19 +1,17 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import { AllPlanets } from "../components/AllPlanets";
-import { People } from "../components/People";
+import { Characters } from "../components/Characters";
 import { Films } from "../components/Films";
 
 export const Main = (): JSX.Element => {
-    const [page, setPage] = React.useState("planets");
+    const [page, setPage] = React.useState("characters");
 
     return (
         <React.Fragment>
             <h1>Star Wars Info</h1>
             <Navbar setPage={setPage} />
             <main className="content">
-                <AllPlanets />
-                <People />
+                <Characters />
                 <Films />
             </main>
         </React.Fragment>
